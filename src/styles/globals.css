@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Theme Variables */
+:root {
+  --background: #FAF3E0; /* Soft champagne for luxury */
+  --foreground: #4A2C2A; /* Rich brown for elegance */
+  --primary: #B22222; /* Deep red for accents */
+  --secondary: #F5F5F5; /* Light neutral for balance */
+  --font-sans: 'Playfair Display', serif; /* Sophisticated serif */
+  --font-mono: 'Roboto Mono', monospace; /* Clean monospaced */
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a; /* True black */
+    --foreground: #ededed; /* Soft white */
+  }
+}
+
+/* Apply Global Styles */
+body {
+  @apply bg-[var(--background)] text-[var(--foreground)] font-serif leading-relaxed;
+}
+
+/* Links */
+a {
+  @apply text-[var(--primary)] font-bold no-underline transition-colors duration-300;
+}
+
+a:hover {
+  @apply text-[#8B0000] underline;
+}
+
+/* Images */
+img {
+  @apply max-w-full rounded-lg shadow-md;
+}
+
+/* Buttons */
+.button {
+  @apply bg-[var(--primary)] text-white px-6 py-3 rounded-md font-bold transition-transform duration-300 hover:scale-105;
+}
