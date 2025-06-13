@@ -7,7 +7,7 @@ export default function HomePage() {
     <section className="text-center px-4 py-12 max-w-5xl mx-auto">
       <h1 className="text-4xl font-bold mb-6">Red Carpet Luxury Spa</h1>
       <p className="text-gray-600 mb-10">
-        Your destination for expertly crafted permanent makeup, spray tanning, fine line tattoos, and scalp micropigmentation.
+        in nanuet ny Your destination for expertly crafted permanent makeup, spray tanning, fine line tattoos, and scalp micropigmentation.
       </p>
 
       <div className="flex justify-center mb-10">
