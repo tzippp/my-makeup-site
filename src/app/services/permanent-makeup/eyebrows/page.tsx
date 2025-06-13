@@ -1,20 +1,43 @@
-// src/app/services/permanent-makeup/eyebrows/page.tsx
-export default function EyebrowsPage() {
+// app/service/eyebrows/page.tsx
+import Head from 'next/head'
+import Image from 'next/image'
+
+export default function BrowsPage() {
   return (
-    <section className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-6">Eyebrow Enhancement</h1>
-
-      <p className="text-gray-700 mb-4">
-        Our brow services are designed to bring balance, symmetry, and softness to your face. Whether you're looking for ombré brows, powder brows, or a custom hybrid technique, we tailor every treatment to your unique features.
-      </p>
-
-      <p className="text-gray-700 mb-4">
-        We use high-quality pigments and precise mapping to ensure natural-looking results that last. Healing is minimal, and results are long-lasting with proper care.
-      </p>
-
-      <p className="text-gray-700">
-        Ready to wake up with perfect brows every day? Book your consultation and let’s create your ideal shape.
-      </p>
-    </section>
-  );
+    <>
+      <Head>
+        <title>Permanent Brows in Rockland County, NY | Red Carpet Luxury Spa</title>
+        <meta
+          name="description"
+          content="Microshading & permanent brow artistry in Rockland County. Natural-looking brows in one session."
+        />
+      </Head>
+      <main className="max-w-3xl mx-auto py-12 px-4">
+        <h1 className="text-4xl font-semibold mb-6">Permanent Brows in Rockland County, NY</h1>
+        <Image
+          src="/assets/brows-hero.jpg"
+          alt="Perfectly shaped permanent brows"
+          width={800}
+          height={400}
+          className="rounded-lg mb-8"
+        />
+        <p className="mb-4">
+          Achieve flawlessly natural brows with our signature microshading technique.
+          Your custom pigment match and in-depth consultation are included.
+        </p>
+        <ul className="list-disc list-inside mb-6 space-y-2">
+          <li>Personalized brow mapping & design</li>
+          <li>Comfort-focused microshading</li>
+          <li>Touch-up session within 6–8 weeks</li>
+          <li>After-care guide & support</li>
+        </ul>
+        <a
+          href="/book"
+          className="inline-block bg-black text-white py-3 px-6 rounded-md hover:bg-gray-800 transition"
+        >
+          Book Your Brows Session
+        </a>
+      </main>
+    </>
+  )
 }
